@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.D0003.Base", "R5T.D0003
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.D0003.Default", "R5T.D0003.Default\R5T.D0003.Default.csproj", "{B2275B9F-D82C-45B1-A811-82F4B6F04797}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.D0003.Standard", "R5T.D0003.Standard\R5T.D0003.Standard.csproj", "{56DC94A0-F119-4D32-BF42-758A4E95A808}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,18 @@ Global
 		{B2275B9F-D82C-45B1-A811-82F4B6F04797}.Release|x64.Build.0 = Release|Any CPU
 		{B2275B9F-D82C-45B1-A811-82F4B6F04797}.Release|x86.ActiveCfg = Release|Any CPU
 		{B2275B9F-D82C-45B1-A811-82F4B6F04797}.Release|x86.Build.0 = Release|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Debug|x64.Build.0 = Debug|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Debug|x86.Build.0 = Debug|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Release|x64.ActiveCfg = Release|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Release|x64.Build.0 = Release|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Release|x86.ActiveCfg = Release|Any CPU
+		{56DC94A0-F119-4D32-BF42-758A4E95A808}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
