@@ -8,26 +8,26 @@ namespace R5T.D0003.Default
     {
         #region Static
 
-        public static ConstructorValueProcessStartTimeProvider NewFromLocalNow(DateTime localNow)
+        public static ConstructorValueProcessStartTimeProvider NewFromNowLocal(DateTime nowLocal)
         {
-            var constructorValueProcessStartTimeProvider = new ConstructorValueProcessStartTimeProvider(localNow);
+            var constructorValueProcessStartTimeProvider = new ConstructorValueProcessStartTimeProvider(nowLocal);
             return constructorValueProcessStartTimeProvider;
         }
 
         /// <summary>
-        /// Uses the <see cref="ConstructorValueProcessStartTimeProvider.NewFromLocalNow(DateTime)"/> as the default.
+        /// Uses the <see cref="ConstructorValueProcessStartTimeProvider.NewFromNowLocal(DateTime)"/> as the default.
         /// </summary>
         public static ConstructorValueProcessStartTimeProvider New(DateTime now)
         {
-            var constructorValueProcessStartTimeProvider = ConstructorValueProcessStartTimeProvider.NewFromLocalNow(now);
+            var constructorValueProcessStartTimeProvider = ConstructorValueProcessStartTimeProvider.NewFromNowLocal(now);
             return constructorValueProcessStartTimeProvider;
         }
 
-        public static ConstructorValueProcessStartTimeProvider NewFromUtcNow(DateTime utcNow)
+        public static ConstructorValueProcessStartTimeProvider NewFromNowUtc(DateTime nowUtc)
         {
-            var localNow = utcNow.ToLocalTime();
+            var nowLocal = nowUtc.ToLocalTime();
 
-            var constructorValueProcessStartTimeProvider = new ConstructorValueProcessStartTimeProvider(localNow);
+            var constructorValueProcessStartTimeProvider = new ConstructorValueProcessStartTimeProvider(nowLocal);
             return constructorValueProcessStartTimeProvider;
         }
 
@@ -35,7 +35,7 @@ namespace R5T.D0003.Default
         {
             var offsetNow = DateTime.Now + offset;
 
-            var constructorValueProcessStartTimeProvider = ConstructorValueProcessStartTimeProvider.NewFromLocalNow(offsetNow);
+            var constructorValueProcessStartTimeProvider = ConstructorValueProcessStartTimeProvider.NewFromNowLocal(offsetNow);
             return constructorValueProcessStartTimeProvider;
         }
 

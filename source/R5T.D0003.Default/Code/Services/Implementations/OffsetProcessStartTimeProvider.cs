@@ -21,17 +21,17 @@ namespace R5T.D0003.Default
             return offsetProcessStartTimeProvider;
         }
 
-        public static OffsetProcessStartTimeProvider NewFromDesiredUtcNow(DateTime desiredUtcNow)
+        public static OffsetProcessStartTimeProvider NewFromDesiredNowUtc(DateTime desiredNowUtc)
         {
-            var offset = DateTime.UtcNow - desiredUtcNow;
+            var offset = DateTime.UtcNow - desiredNowUtc;
 
             var offsetProcessStartTimeProvider = OffsetProcessStartTimeProvider.NewFromOffset(offset);
             return offsetProcessStartTimeProvider;
         }
 
-        public static OffsetProcessStartTimeProvider NewFromDesiredLocalNow(DateTime desiredLocalNow)
+        public static OffsetProcessStartTimeProvider NewFromDesiredNowLocal(DateTime desiredNowLocal)
         {
-            var offset = DateTime.Now - desiredLocalNow;
+            var offset = DateTime.Now - desiredNowLocal;
 
             var offsetProcessStartTimeProvider = OffsetProcessStartTimeProvider.NewFromOffset(offset);
             return offsetProcessStartTimeProvider;
