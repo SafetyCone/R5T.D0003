@@ -1,0 +1,4 @@
+R5T.D0003.Base - A Base service definitions library for the IProcessStartTimeProvider service.
+
+Goals
+
