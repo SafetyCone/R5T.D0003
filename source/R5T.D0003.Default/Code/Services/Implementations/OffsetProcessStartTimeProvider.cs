@@ -15,6 +15,9 @@ namespace R5T.D0003.Default
             return offsetProcessStartTimeProvider;
         }
 
+        /// <summary>
+        /// Uses the <see cref="OffsetProcessStartTimeProvider.NewFromOffset(TimeSpan)"/> as the default.
+        /// </summary>
         public static OffsetProcessStartTimeProvider New(TimeSpan offset)
         {
             var offsetProcessStartTimeProvider = OffsetProcessStartTimeProvider.NewFromOffset(offset);
