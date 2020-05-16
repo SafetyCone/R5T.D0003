@@ -9,7 +9,7 @@ namespace R5T.D0003.Default
         /// <summary>
         /// Note: not thread-safe.
         /// </summary>
-        public static DateTime ProcessStartTime { get; }
+        public static DateTime ProcessStartTime { get; set; }
 
 
         public Task<DateTime> GetProcessStartTimeAsync()
