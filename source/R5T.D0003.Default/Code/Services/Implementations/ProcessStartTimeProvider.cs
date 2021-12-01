@@ -12,6 +12,7 @@ namespace R5T.D0003.Default
             var currentProcess = Process.GetCurrentProcess();
 
             var currentProcessStartTime = currentProcess.StartTime;
+
             return Task.FromResult(currentProcessStartTime);
         }
     }
